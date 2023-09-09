@@ -12,7 +12,7 @@ import {
 const AuthButtons: React.FC = () => {
   const setAuthModalState = useSetAtom(authModalAtom);
   const [user] = useAuthState(auth);
-
+  
   return (
     <div>
       {user ? (
