@@ -9,6 +9,7 @@ import { authModalState, AuthModalView } from '@/store/authModalAtom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
+import ResetPassword from './ResetPassword';
 
 const AuthModal: React.FC = () => {
   const [modalState, setModalState] = useAtom(authModalState);
@@ -46,7 +47,8 @@ console.log('----',authModalState);
               'Reset Password'}
           </Typography.Title>
           {/* <SignIn/> */}
-          <SignUp/>
+          {/* <SignUp/> */}
+          <ResetPassword/>
         </div>
       </Modal>
     </>
