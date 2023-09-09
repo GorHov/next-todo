@@ -7,6 +7,7 @@ import { useAtom } from 'jotai';
 import { auth } from '@/firebase/app';
 import { authModalState, AuthModalView } from '@/store/authModalAtom';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import SignIn from './SignIn';
 
 const AuthModal: React.FC = () => {
   const [modalState, setModalState] = useAtom(authModalState);
@@ -43,7 +44,7 @@ console.log('----',authModalState);
             {modalState.view === AuthModalView.resetPassword &&
               'Reset Password'}
           </Typography.Title>
-
+          <SignIn/>
         </div>
       </Modal>
     </>
