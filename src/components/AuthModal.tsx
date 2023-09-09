@@ -47,8 +47,8 @@ console.log('----',authModalState);
             {modalState.view === AuthModalView.resetPassword &&
               'Reset Password'}
           </Typography.Title>
-          <SignIn/>
-          {/* <SignUp/> */}
+          {/* <SignIn/> */}
+          <SignUp/>
           {/* <ResetPassword/> */}
           {/* <SignInWithGoogle/> */}
         </div>
