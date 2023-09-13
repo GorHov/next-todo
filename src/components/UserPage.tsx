@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import {
-  UploadOutlined,
   UserOutlined,
   VideoCameraOutlined,
   LogoutOutlined,
 } from '@ant-design/icons';
 import { Layout, Menu, theme, Button } from 'antd';
+import Todo from './Todo';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -21,8 +21,7 @@ const UserPage: React.FC = () => {
   };
 
   const handleLogout = () => {
-    // Add your logout logic here
-    console.log('Logged out'); // Replace with your actual logout logic
+    console.log('Logged out');
   };
 
   let content = null;
@@ -30,8 +29,8 @@ const UserPage: React.FC = () => {
   switch (selectedMenuItem) {
     case '1':
       content = (
-        <div style={{ padding: 24, height: '82vh', background: colorBgContainer }}>
-          Content 1
+        <div style={{ padding: 24, height: '82vh', background: '#ccc' }}>
+        <Todo/>
         </div>
       );
       break;
